@@ -1,0 +1,228 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #313E53;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  height: 100%;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background-color: transparent !important;
+  color: gold;
+  transition: 0.45s;
+}
+
+.navbar-nav, .user {
+  margin-top: 7px !important;
+}
+
+.sign-in, .log-in, .log-out {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.log-out, .log-in {
+  margin-top: 7px;
+}
+
+#email-header, #password-header {
+  width: 180px;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.button-header {
+  background-color: white;
+  font-weight: bold;
+}
+
+.toggleWrapper {
+  text-align: right;
+}
+
+.user {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+}
+
+#inregistrare {
+  margin: 5px;
+  margin-bottom: 0px;
+  width: 50px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#label-nume {
+  color: white;
+  font-family: 'Poppins', sans-serif !important;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 14px;
+  margin-right: 10px;
+}
+
+.form-control {
+  width:190px;
+}
+
+.popover {
+  max-width:280px;
+}
+
+#login {
+  margin-top: 12px;
+  padding-top: 2px;
+  background-color: #313E53;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  font-size: 18px;
+}
+
+#buton-iesire{
+  margin-top: 5px;
+  padding-top: 2px;
+  background-color: #313E53;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  font-size: 18px;
+}
+
+#login:hover, #buton-iesire:hover {
+  background-color: transparent !important;
+  color: gold;
+  transition: 0.45s;
+}
+
+/* BURGER MENU */
+.toggle {
+  width: 100%;
+  margin-left: 15px;
+  padding: 10px 20px;
+  background-color: #313E53;
+  text-align: left;
+  box-sizing: border-box;
+  color: white;
+  font-size: 30px;
+  display: none;
+}
+
+@media (max-width:1000px)
+{
+  /*.navbar{
+    width: 250px;
+    display: block;
+  }
+
+  .toggle{
+    display: block;
+  }
+
+  .navbar-header{
+     display: none;
+   }
+
+  ul {
+      width: 100%;
+    }
+
+  .nav {
+      width: 100% !important;
+      text-align: center;
+    }
+
+  .container-fluid{
+    padding: 0px!important;
+    text-align: center!important;
+  }
+  .user{
+    width: 100%;
+    display: block!important;
+    text-align: center!important;
+    justify-content: center;
+    padding-right: 30px;
+  }
+
+  #label-nume {
+    margin-right: 0px;
+    margin-top: 20px;
+  }*/
+
+  .navbar {  width: 100px; }
+
+  .toggle {
+    display: block;
+  }
+
+  .toggle:hover {
+    cursor: pointer;
+    color: gold;
+  }
+
+  .navbar-header {
+    display: none;
+  }
+
+  .nav li{
+    width: 100%;
+  }
+
+  .nav li a {
+    width: 100%;
+  }
+
+  .user {
+    display: block;
+    text-align: center;
+  }
+  .user li {
+    width: 100%;
+  }
+
+  .user li a {
+    width: 100%;
+    margin: 2px;
+    padding: 6px 2px;
+  }
+
+  .user li form {
+    width: 100%;
+    margin: 2px;
+    padding: 6px 2px;
+  }
+
+  .user li p {
+    width: 100%;
+    margin: 2px;
+    padding: 6px 2px;
+    padding-top: 28px;
+  }
+
+  .nav, .user {
+      display: none;
+    }
+}

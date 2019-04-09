@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../imagini/textura.png");
+}
+
+.gallery-container {
+  padding: 10px;
+}
+
+.gallery-links h1 {
+  font-size: 35px;
+  font-weight: bold;
+  font-weight: 700;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+  align-items: flex-start;
+}
+
+.polaroid {
+  margin: 40px 10px 50px;
+  padding: 2px;
+  background-color: #DECDCD;
+  box-shadow: 0 0 10px 7px #313E53;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 1s linear;
+    -moz-transition:  1s linear; /* Firefox 4 */
+    -webkit-transition:  1s linear; /* Safari and Chrome */
+    -o-transition:  1s linear; /* Opera */
+    -ms-transition:  1s linear; /* Explorer 10 */
+}
+
+.polaroid:hover {
+  cursor: pointer;
+  background-color: #BCABAB;
+  border-radius: 0;
+  transition: 0.5s linear;
+    -moz-transition:  0.5s linear; /* Firefox 4 */
+    -webkit-transition:  0.5s linear; /* Safari and Chrome */
+    -o-transition:  0.5s linear; /* Opera */
+    -ms-transition:  0.5s linear; /* Explorer 10 */
+}
+
+.image-div {
+  height: 230px;
+  margin: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-div:hover {
+  opacity: 0.8;
+}
+
+.polaroid h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #313E53;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.polaroid p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #313E53;
+  text-align: center;
+  overflow: hidden;
+}
+
+.upload-form {
+  width: 100%;
+  height: 22px;
+  border-radius: 12px;
+  font-family: 'Roboto Slab', serif;
+  color: black;
+  background-color: white;
+  margin: 5px;
+  font-size: 15px;
+}
+
+#upload-button, #modifica-button {
+  font-weight: bold;
+  margin-bottom: 50px;
+  border-radius: 12px;
+  font-family: 'Roboto Slab', serif;
+  color: black;
+  background-color: white;
+  font-size: 15px;
+  width: 200px;
+}
+
+.gallery-upload h2 {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  color: white;
+  font-display: fallback;
+}
+
+/*h2 {
+  text-align: center;
+  font-family: cursive;
+  font-weight: bold;
+  color: white;
+  font-display: fallback;
+}*/
+
+.imagini {
+  width: 100%;
+  margin: 10px;
+}
+
+.imagini h2 {
+  font-weight: 700;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+
+.upload {
+  text-align: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+#span-dropdown {
+  color: white;
+  width: 100%;
+  height: 22px;
+  font-family: 'Roboto Slab', serif;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-top: 2px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#upload-form-dropdown {
+  width: 45%;
+  height: 22px;
+  border-radius: 12px;
+  font-family: 'Roboto Slab', serif;
+  color: black;
+  background-color: white;
+  text-align: right;
+  font-size: 15px;
+  margin-left: 17px;
+  margin-top: 5px;
+}
+
+/*MODAL*/
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 100px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: #000000;
+background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  background: none !important;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.modal-header {
+  border: none !important;
+  color: white !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700 !important;
+  padding-right: 25px !important;
+}
+
+.fa-times {
+  color: white !important;
+}
+
+.modal-body{
+  display: flex !important;
+  margin-top: 20px !important;
+  width: 700px !important;
+  height: 360px !important;
+}
+
+.imgPrep {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+}
+
+.inapoi, .inainte {
+  height: 30px;
+  padding: 150px 10px;
+  font-size: 60px;
+  opacity: 0.8;
+  color: #cccccc;
+}
+
+.inapoi:hover, .inainte:hover {
+  color: #aaaaaa;
+  cursor: pointer;
+}
+/* SFARSIT MODAL CLIENT */
+
+/* MODAL ADMIN MODIFICARE IMAGINE */
+.modalAdmin {
+  background-color: #DECDCD!important;
+}
+
+.titluAdmin {
+  color: #313E53!important;
+  font-weight: bold;
+}
+.optiuniGalerie{
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-customize {
+  float: right;
+  color: white;
+  background-color: #313E53;
+  height: 32px;
+  font-family: 'Roboto Slab', serif;
+  margin: 0 5px;
+}
+
+.btn-customize:hover {
+  background-color: #424F64;
+  color: white !important;
+  cursor: pointer;
+}
+
+.modifica-form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.modifica-form label {
+  color: #313E53;
+  font-size: 18px;
+}
+
+.modifica-input {
+  width: 65%;
+  height: 22px;
+  border-radius: 12px;
+  font-family: 'Roboto Slab', serif;
+  color: black;
+  background-color: white;
+  margin: 5px;
+  font-size: 15px;
+}
+
+#modificaFile {
+  width: 100%;
+}
+/*  SFARSIT MODAL */
+
+/* MODAL ADMIN STERGERE IMAGINE  */
+.fereastra-modal {
+  background-color: #DECDCD !important;
+  color: #313E53 !important;
+  font-family: 'Roboto Slab', serif;
+}
+/*SFARSIT MODAL */
+
+/* Clearfix (clear floats) */
+.col-md-3::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media only screen and (max-width: 1200px) {
+    .polaroid {
+      margin: 5px;
+      height: 400px;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      .polaroid {
+        margin: 15px;
+        height: 400px;
+      }
+
+      .imgModal {
+        width: 80%;
+      }
+
+      .imgPrep {
+        width: 60%;
+        height: auto;
+      }
+    }
+  @media only screen and (max-width: 960px) {
+    .polaroid p {
+      font-size: 12px;
+    }
+  }
+
+  @media only screen and (max-width: 700px){
+  .modal-content {
+  width: 100%;
+  }
+  }
+
+  @media only screen and (max-width: 550px){
+    .modal-dialog {
+      width: 100%;
+      align-items: center;
+    }
+
+    .fereastra-modal {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+      .column {
+          width: 100%;
+      }
+    }

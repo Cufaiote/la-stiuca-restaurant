@@ -1,0 +1,164 @@
+html,body{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  height: 1000px;
+  background-image: url("../imagini/header2.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.header img{
+  margin-top: -160px;
+}
+
+.responsive {
+  width: 90%;
+  height: auto;
+}
+
+.infos{
+  height: 550px;
+  background-image: url("../imagini/textura.png");
+  background-repeat: repeat;
+  box-shadow: 3px 20px 50px #000;
+
+
+}
+
+.infos h1{
+  margin-top: 100px;
+  font-size: 60px;
+  font-weight: 300;
+  color: #fff;
+  font-family:'Roboto Slab', serif;
+  text-decoration: underline;
+
+}
+.infos p{
+  margin-top: 60px;
+  font-size: 25px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  line-height: 45px;
+}
+
+.afisare-optiuni{
+  height: 500px;
+  background-color: #101010;
+  box-shadow: 0px -40px 100px #000;
+  overflow: hidden;
+  text-align: center;
+}
+
+.afisare-optiuni i{
+  font-size: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.m{
+
+  height: 400px;
+  margin-top: 50px;
+
+}
+
+.coloana{
+  padding: 30px 10px;
+}
+
+.coloana i{
+  color: gold;
+}
+
+.coloana h3{
+  font-family:'Roboto Slab', serif;
+  color: #fff;
+  text-decoration:underline;
+}
+
+.coloana p{
+  margin-top: 30px;
+  line-height: 25px;
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.coloana a{
+  color: white;
+  text-decoration: none !important;
+  border:1px solid white;
+  border-radius: 30px;
+  padding: 15px 19px;
+  font-family: 'Poppins', sans-serif;
+  transition: 1s linear;
+    -moz-transition:  1s linear; /* Firefox 4 */
+    -webkit-transition:  1s linear; /* Safari and Chrome */
+    -o-transition:  1s linear; /* Opera */
+    -ms-transition:  1s linear; /* Explorer 10 */
+
+}
+
+.coloana a:hover{
+  color: gold;
+  background-color: #435E79;
+  border: transparent;
+  border-radius: 0px;
+  transition: 0.5s linear;
+    -moz-transition:  .5s linear; /* Firefox 4 */
+    -webkit-transition: .5s linear; /* Safari and Chrome */
+    -o-transition:  .5s linear; /* Opera */
+    -ms-transition:  .5s linear; /* Explorer 10 */
+
+}
+
+.galerie{
+  z-index: 0;
+}
+.item h3
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 1000px) {
+  .header{
+    height:700px!important;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .afisare-optiuni{
+    height: 1300px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .infos p{
+    margin-top: 60px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .header{
+    height:500px!important;
+  }
+
+}

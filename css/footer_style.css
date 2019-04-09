@@ -1,0 +1,63 @@
+
+.footer-area {
+  color: white;
+  overflow: hidden;
+}
+
+.footer-div {
+  width: 100%;
+  background-color: /*#000B20*/ #18253A;
+  /*opacity: 0.85;*/
+  height: 150px;
+}
+
+.program, .adresa-footer, .telefon, .newsletter{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 1;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.hr-list {
+  text-decoration: none;
+  font-size: 12px;
+  list-style-type: none;
+}
+
+.telefon-flex {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 0 7px;
+}
+
+.telefon-comenzi, .telefon-rezervari {
+  margin: 0 40px;
+}
+
+.phoneNo {
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer-div {
+    height: 200px;
+  }
+
+  .telefon-comenzi, .telefon-rezervari {
+    margin: 0 15%;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+
+  .telefon-comenzi, .telefon-rezervari {
+    margin: 0 15%;
+  }
+
+  .footer-div {
+    height: 400px;
+  }
+
+}

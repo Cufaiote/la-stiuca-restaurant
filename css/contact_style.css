@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../imagini/textura.png");
+  padding-top: 100px;
+}
+
+.col-md-6, .col-xs-6{
+  margin: auto;
+  padding-top: 50px;
+}
+
+.descriere{
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+
+}
+
+.nrtel{
+  color:white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 35px;
+}
+
+.space-div {
+  height: 100px;
+}
+
+.contact-form label {
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#contact-submit {
+  width: 100px;
+  margin-top: 10px;
+}
+
+body h1 {
+  padding-top: 35px;
+  margin-top: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  color: white;
+}

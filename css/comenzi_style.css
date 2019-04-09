@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url("../imagini/textura.png");
+}
+
+.comenzi-container {
+  min-height: 568px;
+}
+
+.comenzi-container h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.comenzi {
+  background-color: #ccddcc;
+  margin: 30px 0;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-height: 300px;
+  border-radius: 10px !important;
+  box-shadow: 0 0 10px 7px #313E53;
+  overflow: hidden;
+}
+
+.comenzi h2 {
+  text-align: center;
+  font-family:'Roboto Slab', serif;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.tabel {
+  width: 95% !important;
+  margin: 15px 5%;
+  text-align: center;
+}
+
+.thead-style {
+  background-color: #333333;
+  color: white;
+}
+
+th, td {
+  height: 40px !important;
+}
+
+.element {
+  background-color: #dddddd;
+}
+
+.td-elimina {
+  background-color: #ccddcc !important;
+  border: 1px solid #ccddcc;
+}

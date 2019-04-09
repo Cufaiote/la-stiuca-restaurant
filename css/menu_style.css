@@ -1,0 +1,566 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../imagini/textura.png");
+}
+
+/* css Modal */
+.modal-box {
+  /*visibility: hidden;*/
+}
+
+.modal-dialog-centered {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  align-items:center;
+  min-height:calc(100% - (.4rem * 2));
+  height: 200px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.fereastra-modal {
+  background-color: #DECDCD !important;
+  color: #313E53 !important;
+}
+
+.titlu {
+  color:black;
+  text-align: -webkit-left;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 22px;
+  margin-left: 15px !important;
+}
+
+.item {
+  display: flex;
+}
+
+.cantitate {
+  color:black;
+  text-align: -webkit-left;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 16px;;
+}
+
+.cantitate h3 {
+  margin-right: 10px;
+}
+
+.fa-semn {
+  padding: 0;
+  color: green;
+  display: block;
+}
+
+.po-modal {
+  border-radius: 110px;
+  box-shadow: 10px 10px 30px #555;
+  height: 200px;
+  width: 200px;
+  margin: 10px 10px;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.info-pret {
+  color: black;
+  text-align: left;
+}
+
+.buton-adauga {
+  padding-bottom: 0;
+  margin: 0 15px;
+}
+
+.form-adauga {
+  display: flex;
+}
+
+.btn-modal {
+  margin: 0 5px;
+}
+
+.info-item-modal {
+
+  float: right;
+  margin: 10px 10px 0px 50px;
+}
+
+.cantitate{
+  display: flex;
+}
+
+.value-form {
+  width: auto;
+  margin: 10px 10px;
+  display: flex;
+  /*text-align: center;
+  /*padding-top: 15px;*/
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 9px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+.decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+  height: 40px;
+  z-index: 1;
+  padding-bottom: 10px;
+}
+
+.increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+  height: 40px;
+  z-index: 1;
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+.number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/*SFARSIT MODAL*/
+
+/* MODAL CLIENT NEAUTENTIFICAT*/
+.item-cn {
+  display: block;
+  justify-content: space-between;
+}
+
+.item-cn h4{
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.mod-autentificare, .mod-inregistrare {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.btn-style {
+ width: 120px !important;
+ height: 30px !important;
+ margin-top: 5px;
+ margin-bottom: 5px;
+}
+
+.btn-style a {
+  text-decoration: none !important;
+  font-family: : 'Roboto Slab', serif;
+  color: black;
+}
+/* SFARSIT MODAL */
+
+.container {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: white;
+}
+
+.container h1 {
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+}
+
+.categorii-meniu {
+  width: 100%;
+  height: 50px;
+  margin-top: 40px;
+  background-color: #DECDCD;
+  text-align: center;
+
+  display: -webkit-flex;     /* Safari */
+  -webkit-flex-wrap: wrap;   /* Safari 6.1+ */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.categorii-meniu form {
+  color: white;
+  margin: 5px 10px;
+}
+
+.categorii-meniu form button {
+  height: 30px;
+  margin: 2px 3px;
+  text-decoration: none !important;
+  background-color: #DECDCD;
+  color: #031f32;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Roboto Slab', serif;
+}
+
+.categorii-meniu form button :hover {
+  text-decoration: none !important;
+  color: orange;
+}
+
+.preparate h2 {
+  color: white;
+  font-family: 'Roboto Slab', cursive;
+  font-size: bold;
+  text-transform: capitalize;
+}
+
+
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+  align-items: flex-start;
+  background-color: #ddd;
+  margin-top: 100px;
+  height:700px;
+  overflow: hidden;
+  }
+
+.incadrare {
+  height: auto;
+  overflow: hidden;
+}
+
+.left {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 300px;
+  width: 550px !important;
+  background-color: #DECDCD;
+  color: #313E53;
+  box-shadow: 0 0 10px 7px #313E53;
+  border-radius: 10px;
+  transition: 1s linear;
+    -moz-transition:  1s linear; /* Firefox 4 */
+    -webkit-transition:  1s linear; /* Safari and Chrome */
+    -o-transition:  1s linear; /* Opera */
+    -ms-transition:  1s linear; /* Explorer 10 */
+}
+
+.left:hover {
+  background-color: #BCABAB;
+  border-radius: 0;
+  transition: 0.5s linear;
+    -moz-transition:  0.5s linear; /* Firefox 4 */
+    -webkit-transition:  0.5s linear; /* Safari and Chrome */
+    -o-transition:  0.5s linear; /* Opera */
+    -ms-transition:  0.5s linear; /* Explorer 10 */
+}
+
+.left-item {
+  height: 250px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+}
+
+.right-item {
+  height: 250px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+}
+
+.po {
+  border-radius: 110px;
+  box-shadow: 10px 10px 30px #555;
+  height: 180px;
+  width: 180px;
+  margin: 10px 10px;
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-item {
+  height: 220px;
+  float: right;
+  width: 300px;
+  margin: 10px 10px;
+}
+
+.numeSiPret, .info-ing, .buton-adauga {
+  display: flex;
+  justify-content: space-between;
+  height: 73px;
+  width: 100%;
+  padding: 10px;
+}
+
+.numeSiPret h3 {
+  font-weight: bold;
+}
+
+.btn-customize {
+  float: right;
+  color: white;
+  background-color: #313E53;
+  height: 32px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.btn-customize:hover {
+  background-color: #424F64;
+  color: white !important;
+  cursor: pointer;
+}
+
+.form-adauga button{
+  /*display: block;*/
+  float: right;
+  height: 30px;
+  width: 140px;
+  font-family: 'Roboto Slab', serif;
+  background-color: white;
+  color: #031f32;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.buton-adauga {
+  text-align: right;
+  padding-top: 35px;
+  float: right;
+}
+
+#btn-autentificare, #btn-inregistrare {
+  width: 125px;
+}
+
+#btn-autentificare a, #btn-inregistrare a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+
+/* FORMULARUL DE INCARCARE A UNUI PREPARAT */
+.menu-upload-container {
+  height: auto;
+  overflow: hidden;
+}
+
+.modifica-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.modifica-form label {
+  color: #313E53;
+  font-size: 18px;
+}
+
+.modifica-input {
+  width: 65%;
+  height: 22px;
+  border-radius: 12px;
+  font-family: 'Roboto Slab', serif;
+  color: black;
+  background-color: white;
+  margin: 5px;
+  font-size: 15px;
+}
+
+#modificaFile {
+  width: 100%;
+}
+
+.upload-form {
+    width: 100%;
+    height: 22px;
+    border-radius: 12px;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    background-color: white;
+    margin: 5px;
+    font-size: 15px;
+  }
+
+  #upload-button, #modifica-button {
+    font-weight: bold;
+    margin-bottom: 50px;
+    border-radius: 12px;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    background-color: white;
+    font-size: 15px;
+    width: 200px;
+    margin-top: 40px;
+  }
+  .modifica-form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .modifica-form label {
+    color: #313E53;
+    font-size: 18px;
+  }
+
+  .modifica-input {
+    width: 65%;
+    height: 22px;
+    border-radius: 12px;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    background-color: white;
+    margin: 5px;
+    font-size: 15px;
+  }
+
+  .menu-upload {
+    height: 500px;
+  }
+
+  .menu-upload h2 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    color: white;
+    font-display: fallback;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    color: white;
+    font-display: fallback;
+  }
+
+  .upload {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  #upload-form-dropdown {
+    width: 50%;
+    height: 22px;
+    border-radius: 12px;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    background-color: white;
+    text-align: right;
+    font-size: 15px;
+    margin-left: 17px;
+  }
+
+  #span-dropdown {
+    color: white;
+    width: 100%;
+    height: 22px;
+    font-family: 'Roboto Slab', serif;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-top: 2px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .column {
+      float: left;
+      width: 40%;
+      padding: 5px;
+  }
+
+  .form-eliminare button{
+    margin: 0 10px;
+  }
+
+/* RESPONSIVE */
+  @media only screen and (max-width: 960px) {
+    .meniu-container {
+      overflow: hidden;
+      align-items: center;
+    }
+
+    .categorii-meniu {
+      height: 320px;
+      display: block;
+    }
+
+    .categorii-meniu form {
+      display: block;
+      text-align: center;
+    }
+
+    .categorii-meniu form button {
+      width: 100%;
+    }
+
+    .preparate {
+      display: block;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .left {
+      justify-content: center;
+      overflow: hidden;
+    }
+  }

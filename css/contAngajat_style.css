@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../imagini/textura.png");
+}
+
+.cont-container {
+  display: block;
+  margin: 20px;
+  min-height: 530px;
+}
+
+.cont-container h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.detaliiCont {
+  text-align: center;
+  background-color: #ddcccc;
+  margin: 30px 0;
+  font-family: "Roboto Slab", serif;
+  color:white;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 7px #313E53;
+  overflow: hidden;
+  color: #313E53;
+}
+
+.detalii {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.informatii-client {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.idAngajat {
+  visibility: hidden;
+}
+
+.nume, .prenume, .nrTelefon,
+.email, .parola, .repetareParola {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px !important;
+  margin: 10px 0;
+  font-family: 'Poppins', sans-serif;
+  color: #313E53;
+  font-size: 18px;
+}
+
+.nume input[type=text], .prenume input[type=text],
+.nrTelefon input[type=text], .email input[type=email],
+.parola input[type=password], .repetareParola input[type=password] {
+  border-radius: 5px;
+  width: 230px;
+}
+
+.modificariDetalii {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 80px !important;
+
+}
+
+.btn-detalii{
+  width: 80px;
+  height: 32px;
+  margin: 2px;
+}
+
+#anuleaza, #trimite {
+  visibility: hidden;
+  width: 0;
+}
+
+
+.hiddenForm {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+}

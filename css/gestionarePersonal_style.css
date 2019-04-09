@@ -1,0 +1,121 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url("../imagini/textura.png");
+}
+
+.gestionarePersonal-container {
+  min-height: 518px;
+  overflow: hidden;
+}
+
+.gestionarePersonal-container h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 50px;
+  padding-top: 25px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.angajati {
+  background-color: #ccddcc;
+  margin: 30px 0;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-height: 300px;
+  border-radius: 10px !important;
+  box-shadow: 0 0 10px 7px #313E53;
+  overflow: hidden;
+}
+
+.angajati h2 {
+  text-align: center;
+  font-family:'Roboto Slab', serif;
+  font-weight: bold;
+  color: #313E53;
+  padding-top: 10px;
+}
+
+.tabel {
+  width: 80% !important;
+  margin-left: 10%;
+  margin: 30px 10%;
+  text-align: center;
+}
+
+.thead-style {
+  background-color: #333333;
+  color: white;
+}
+
+th, td {
+  height: 40px !important;
+}
+
+.element {
+  background-color: #dddddd;
+}
+
+.td-elimina {
+  background-color: #ccddcc !important;
+  border: 1px solid #ccddcc;
+}
+
+.adaugareAngajat {
+  float: right;
+  margin-top: 60px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  padding-top: 35px;
+}
+
+.formularAngajare {
+  visibility: hidden;
+  height: 0px;   
+}
+
+.formularAngajare h3 {
+  text-align: center;
+  font-family:'Roboto Slab', serif;
+  font-weight: bold;
+  color: #313E53;
+  padding: 10px 0;
+}
+
+.nume, .prenume, .nrTelefon, .email,
+.functie, .parola, .repetareParola {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px !important;
+  margin: 10px 0;
+  font-family: 'Poppins', sans-serif;
+  color: #313E53;
+}
+
+.nume input[type=text], .prenume input[type=text],
+.nrTelefon input[type=text], .email input[type=email],
+.functie select,
+.parola input[type=password], .repetareParola input[type=password]  {
+  border-radius: 5px;
+  padding-left: 10px;
+  width: 200px;
+}
+
+.optiuni {
+  text-align: right;
+  padding-right: 15px;
+  padding-bottom: 25px;
+}
+
+.btn-detalii {
+  width: 100px;
+  height: 32px;
+  margin: 2px;
+  padding: 10px 15px;
+  margin: 5px;
+}
